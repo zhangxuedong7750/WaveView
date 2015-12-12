@@ -7,8 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "ZXDWaveView.h"
 
-@interface ViewController ()
+@interface ViewController (){
+
+    CGFloat progress;
+}
+
+@property (nonatomic,strong) ZXDWaveView *waveView;
 
 @end
 
@@ -16,7 +22,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    CGSize screenSize = [UIScreen mainScreen].bounds.size;
+    ZXDWaveView *waveView = [[ZXDWaveView alloc] initWithFrame:CGRectMake(screenSize.width / 2 - 100, 100, 200, 200)];
+    self.waveView = waveView;
+    [waveView start];
+    [self.view addSubview:waveView];
+    
+    [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(add) userInfo:nil repeats:YES];
+}
+
+
+-(void)add{
+
+    progress += 1;
+    self.waveView.progress = progress;
 }
 
 - (void)didReceiveMemoryWarning {

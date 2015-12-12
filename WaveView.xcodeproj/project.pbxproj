@@ -13,6 +13,7 @@
 		E1784A631C1B052F00BB81FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1784A611C1B052F00BB81FC /* Main.storyboard */; };
 		E1784A651C1B052F00BB81FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1784A641C1B052F00BB81FC /* Assets.xcassets */; };
 		E1784A681C1B052F00BB81FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1784A661C1B052F00BB81FC /* LaunchScreen.storyboard */; };
+		E1784A711C1B055900BB81FC /* ZXDWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1784A701C1B055900BB81FC /* ZXDWaveView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E1784A641C1B052F00BB81FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1784A671C1B052F00BB81FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1784A691C1B052F00BB81FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1784A6F1C1B055900BB81FC /* ZXDWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXDWaveView.h; sourceTree = "<group>"; };
+		E1784A701C1B055900BB81FC /* ZXDWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXDWaveView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		E1784A571C1B052F00BB81FC /* WaveView */ = {
 			isa = PBXGroup;
 			children = (
+				E1784A6F1C1B055900BB81FC /* ZXDWaveView.h */,
+				E1784A701C1B055900BB81FC /* ZXDWaveView.m */,
 				E1784A5B1C1B052F00BB81FC /* AppDelegate.h */,
 				E1784A5C1C1B052F00BB81FC /* AppDelegate.m */,
 				E1784A5E1C1B052F00BB81FC /* ViewController.h */,
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1784A711C1B055900BB81FC /* ZXDWaveView.m in Sources */,
 				E1784A601C1B052F00BB81FC /* ViewController.m in Sources */,
 				E1784A5D1C1B052F00BB81FC /* AppDelegate.m in Sources */,
 				E1784A5A1C1B052F00BB81FC /* main.m in Sources */,

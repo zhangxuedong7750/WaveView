@@ -1,2 +1,1 @@
 # WaveView
-用贝塞尔曲线和CADisplayLink完成波浪的绘制
